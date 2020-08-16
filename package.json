@@ -5,12 +5,14 @@
   "license": "MIT",
   "scripts": {
     "start": "budo --live --verbose --ssl --port 3000 --open",
-    "deploy": "ghpages",
-    "ghpages": "ghpages"
+    "start-dist": "budo --live --verbose --ssl --port 3000 --open --dir dist/",
+    "ghpages": "ghpages",
+    "html-minify": "mkdir -p dist; node node_modules/html-minifier/cli.js --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype index.html > dist/index.html"
   },
   "devDependencies": {
     "budo": "^11.6.4",
-    "ghpages": "^0.0.10"
+    "ghpages": "^0.0.10",
+    "html-minifier": "^4.0.0"
   },
   "keywords": [
     "aframe",
