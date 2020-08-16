@@ -1,0 +1,24 @@
+{
+  "name": "pathways",
+  "description": "A WebXR game for js13k 2020 game jam",
+  "version": "0.0.1",
+  "license": "MIT",
+  "scripts": {
+    "start": "budo --live --verbose --ssl --port 3000 --open",
+    "deploy": "ghpages",
+    "ghpages": "ghpages"
+  },
+  "devDependencies": {
+    "budo": "^11.6.4",
+    "ghpages": "^0.0.10"
+  },
+  "keywords": [
+    "aframe",
+    "aframe-example",
+    "aframe-scene",
+    "webvr",
+    "webxr",
+    "js13k",
+    "vr"
+  ]
+}
